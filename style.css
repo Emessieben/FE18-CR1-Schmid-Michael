@@ -32,6 +32,8 @@
   font-weight: bold;
   font-size: 2.5rem;
   margin: 0 25px;
+  text-decoration: none;
+  color: black;
 }
 
 .search-img {
@@ -93,25 +95,45 @@
   color: white;
 }
 
-.smaller {
+.smaller, footer .copyright {
   font-size: 0.7rem;
+}
+
+.about {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.about a {
+  text-decoration: none;
+  color: white;
 }
 
 footer {
   background-color: black;
   position: relative;
-  padding: 2% 15%;
-  margin-top: 10%;
+  padding: 3% 15%;
+  margin-top: 3%;
   text-align: center;
   color: white;
 }
 footer i {
-  margin: 20px;
+  margin: 50px 20px 10px;
   font-size: 1.5rem;
 }
 footer .copyright {
   margin: 20px;
-  font-size: 0.8rem;
+}
+
+.recipe-container {
+  width: 70%;
+  margin: 50px auto;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.recipe-img {
+  width: 85%;
 }
 
 @media only screen and (min-width: 601px) and (max-width: 900px) {
@@ -123,6 +145,9 @@ footer .copyright {
   }
   .navbar a {
     margin: 0 5px;
+  }
+  footer {
+    margin-top: 15%;
   }
 }
 @media only screen and (max-width: 600px) {
