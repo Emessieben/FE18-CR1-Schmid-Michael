@@ -80,7 +80,7 @@
   left: -16px;
 }
 
-.content {
+.timeline-content {
   padding: 20px 30px;
   background-color: white;
   position: relative;
@@ -88,6 +88,6 @@
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.content:hover {
+.timeline-content:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }/*# sourceMappingURL=aboutstyle.css.map */
