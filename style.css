@@ -20,15 +20,21 @@
 .title {
   display: flex;
   align-items: center;
-  padding: 10px;
+  padding: 5px;
 }
 .title span {
   margin-left: auto;
+  margin-right: 2%;
+}
+.title img {
+  margin-right: 2%;
 }
 
 .logo {
   font-family: "Pacifico";
-  font-size: 2rem;
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin: 0 2%;
 }
 
 .search-img {
@@ -37,13 +43,13 @@
 
 .navbar {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 .navbar a {
   text-decoration: none;
   color: black;
-  margin: 5px;
+  margin: 5px 15px;
   padding: 10px;
   border: solid 1px white;
   border-radius: 4px;
@@ -56,11 +62,46 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
+  padding: 100px;
+  gap: 5%;
 }
 
 .item {
   aspect-ratio: 4/3;
+  position: relative;
 }
 .item img {
-  width: 400px;
+  min-width: 100%;
+  max-width: 350px;
+  position: block;
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.item .description {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+.item .description p {
+  color: white;
+}
+
+footer {
+  background-color: black;
+  position: relative;
+  padding: 3% 15%;
+  margin-top: 50px;
+  text-align: center;
+  color: white;
+}
+footer i {
+  margin: 20px;
+  font-size: 1.5rem;
+}
+footer .copyright {
+  margin: 20px;
+  font-size: 0.8rem;
 }/*# sourceMappingURL=style.css.map */
