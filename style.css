@@ -6,13 +6,61 @@
   font-family: "Montserrat";
   src: url("assets/Montserrat-Medium.ttf");
 }
+@font-face {
+  font-family: "Pacifico";
+  src: url("assets/Pacifico-Regular.ttf");
+}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Montserrat";
 }
 
-h1 {
-  font-size: 10rem;
-  font-family: "Montserrat";
+.title {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.title span {
+  margin-left: auto;
+}
+
+.logo {
+  font-family: "Pacifico";
+  font-size: 2rem;
+}
+
+.search-img {
+  width: 25px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.navbar a {
+  text-decoration: none;
+  color: black;
+  margin: 5px;
+  padding: 10px;
+  border: solid 1px white;
+  border-radius: 4px;
+}
+.navbar a:hover {
+  border: solid 1px black;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.item {
+  aspect-ratio: 4/3;
+}
+.item img {
+  width: 400px;
 }/*# sourceMappingURL=style.css.map */

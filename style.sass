@@ -1,11 +1,55 @@
-@import "fonts"
+@import "fonts","colors"
     
 *
     padding: 0
     margin: 0
     box-sizing: border-box
-
-h1
-    font-size: 10rem
     font-family: "Montserrat"
+
+
+// Title
+
+.title
+    display: flex
+    align-items: center
+    padding: 10px
+    span
+        margin-left: auto
+
+
+.logo
+    font-family: "Pacifico"
+    font-size: 2rem
+
+.search-img
+    width: 25px
+
+// Navbar
+
+.navbar
+    display: flex
+    justify-content: space-evenly
+    flex-wrap: wrap
+    a
+        text-decoration: none
+        color: $main-text-color
+        margin: 5px
+        padding: 10px
+        border: solid 1px white
+        border-radius: 4px
+        &:hover 
+            border: solid 1px black
+
+// Main
+
+.container 
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: repeat(3, 1fr)
+
+.item
+    aspect-ratio: 4 / 3
+    img
+        width: 400px
+    
 
