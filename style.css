@@ -17,6 +17,23 @@
   font-family: "Montserrat";
 }
 
+h2 {
+  font-size: 3rem;
+  font-family: "Pacifico";
+  font-weight: bold;
+  padding: 0 0 50px;
+  text-decoration: underline;
+}
+
+h3 {
+  font-size: 2rem;
+  padding: 20px;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
 .title {
   display: flex;
   align-items: center;
@@ -128,12 +145,21 @@ footer .copyright {
 .recipe-container {
   width: 70%;
   margin: 50px auto;
+  padding: 50px;
   text-align: center;
   line-height: 1.5;
+  background-color: #FEFBF6;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: 0.5s;
+}
+.recipe-container:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .recipe-img {
-  width: 85%;
+  width: 100%;
+  border-radius: 4px;
 }
 
 @media only screen and (min-width: 601px) and (max-width: 900px) {
@@ -149,6 +175,10 @@ footer .copyright {
   footer {
     margin-top: 15%;
   }
+  .recipe-container {
+    padding: 30px;
+    width: 80%;
+  }
 }
 @media only screen and (max-width: 600px) {
   .container {
@@ -160,5 +190,9 @@ footer .copyright {
   .navbar a {
     font-size: 0.9rem;
     margin: 0;
+  }
+  .recipe-container {
+    padding: 15px;
+    width: 90%;
   }
 }/*# sourceMappingURL=style.css.map */

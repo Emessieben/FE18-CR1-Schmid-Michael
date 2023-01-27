@@ -7,6 +7,20 @@
     box-sizing: border-box
     font-family: "Montserrat"
 
+h2
+    font-size: 3rem
+    font-family: "Pacifico"
+    font-weight: bold
+    padding: 0 0 50px
+    text-decoration: underline 
+
+h3
+    font-size: 2rem
+    padding: 20px
+
+h4
+    font-size: 1.5rem
+
 // Title
 
 .title
@@ -106,17 +120,28 @@ footer
 .recipe-container
     width: 70%
     margin: 50px auto
+    padding: 50px
     text-align: center
     line-height: 1.5
+    background-color: #FEFBF6
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.2)
+    border-radius: $main-border-radius
+    transition: 0.5s
+    &:hover
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
 
 .recipe-img
-    width: 85%
+    width: 100%
+    border-radius: $main-border-radius
 
-// Medium Devices
-    
+// MEDIA QUERY
+
 $sm: 600px
 $md: 900px
-@media only screen and (min-width:601px) and (max-width: 900px)
+
+// Medium Devices
+
+@media only screen and (min-width:$sm +1) and (max-width: $md)
     .container
         grid-template-columns: repeat(2, 1fr)
         grid-template-rows: repeat(5, 1fr)
@@ -127,6 +152,9 @@ $md: 900px
             margin: 0 5px
     footer
         margin-top: 15%
+    .recipe-container
+        padding: 30px
+        width: 80%
 
 // Small Devices
 
@@ -140,3 +168,6 @@ $md: 900px
         a
             font-size: 0.9rem
             margin: 0
+    .recipe-container
+        padding: 15px
+        width: 90%
