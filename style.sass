@@ -50,19 +50,19 @@
     grid-template-columns: repeat(3, 1fr)
     grid-template-rows: repeat(3, 1fr)
     padding: 50px
-    gap: 5%
+    gap: 3%
 
 .item
-    aspect-ratio: 4 / 3
     position: relative
     img
+        aspect-ratio: 4 / 3
         min-width: 100%
         max-width: 220px
         position: block
         border-radius: $main-border-radius
         box-shadow: 1px 1px 1px rgba(0,0,0,0.2)
         opacity: 85%
-        transition: 1s
+        transition-duration: 0.5s
         &:hover
             box-shadow: 3px 3px 3px rgba(0,0,0,0.5)
             opacity: 1
@@ -72,9 +72,12 @@
         position: absolute
         bottom: 5%
         background: rgba(0, 0, 0, 0.5)
-        padding: 5px
+        padding: 10px
         p
             color: $second-text-color
+
+.smaller
+    font-size: 0.7rem
 
 // Footer
 footer
@@ -99,8 +102,8 @@ $md: 900px
     .container
         grid-template-columns: repeat(2, 1fr)
         grid-template-rows: repeat(5, 1fr)
-        padding: 50px
-        gap: 10px
+        padding: 30px
+        gap: 2%
 
 
 // Small Devices
@@ -109,5 +112,5 @@ $md: 900px
     .container
         grid-template-columns: repeat(1, 1fr)
         grid-template-rows: repeat(9, 1fr)
-        padding: 50px
-        gap: 10px
+        padding: 30px
+        gap: 15px
