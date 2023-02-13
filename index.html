@@ -9,6 +9,8 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico?v=2">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/e088e98888.js" crossorigin="anonymous"></script>
+    <!-- Swippers Css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -29,11 +31,107 @@
             <a href="#dessert">Dessert</a>
         </nav>
     </header>
+    <hr>
+      <!-- Swiper -->
+  <div class="swiper mySwiper container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="item" id="breakfast">
+            <img src="https://cdn.pixabay.com/photo/2016/11/06/23/16/breakfast-1804436_960_720.jpg" alt="breakfast picture">
+            <div class="description">
+                <p>Breakfast</p>
+                <p class="smaller">healthy · american · english</p>
+            </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="item" id="lunch">
+            <img src="https://cdn.pixabay.com/photo/2019/04/22/08/37/burger-4145977_960_720.jpg" alt="lunch picture">
+            <div class="description">
+                <p>Lunch</p>
+                <p class="smaller">take away · with friends · meal prep</p>
+            </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="item" id="recipe-of-month">
+            <img src="https://cdn.pixabay.com/photo/2019/09/27/09/59/pumpkin-soup-4508015_1280.jpg" alt="recipe-of-month picture">
+            <div class="description">
+                <p>Recipe of the Month</p>
+                <p class="smaller">Kürbis in Honig-Fenchel-Marinade</p>
+            </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="item" id="dinner">
+            <img src="https://cdn.pixabay.com/photo/2016/09/15/19/24/salad-1672505_960_720.jpg" alt="salad picture">
+            <div class="description">
+                <p>Dinner</p>
+                <p class="smaller">salads · light · fast</p>
+            </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="item" id="dessert">
+            <img src="https://cdn.pixabay.com/photo/2017/01/11/11/33/cake-1971552_960_720.jpg" alt="cake picture">
+            <div class="description">
+                <p>Dessert</p>
+                <p class="smaller">cake · chocolate · icecream</p>
+            </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="item" id="pizza">
+            <img src="https://cdn.pixabay.com/photo/2017/12/10/14/47/pizza-3010062_960_720.jpg" alt="pizza picture">
+            <div class="description">
+                <p>Pizza</p>
+                <p class="smaller">italian · american</p>
+            </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="item" id="pasta">
+            <img src="https://cdn.pixabay.com/photo/2017/02/12/19/05/noodles-2060886_960_720.jpg" alt="pasta picture">
+            <div class="description">
+                <p>Pasta</p>
+                <p class="smaller">spagetti · lasagne · rigatoni</p>
+            </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="item" id="soups">
+            <img src="https://cdn.pixabay.com/photo/2019/03/14/19/02/soup-4055647_960_720.jpg" alt="soup picture">
+            <div class="description">
+                <p>Soups</p>
+                <p class="smaller">vegan · vegetarian · meat</p>
+            </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="item" id="asian">
+            <img src="https://cdn.pixabay.com/photo/2015/05/02/01/03/lunch-box-749367_960_720.jpg" alt="asian food">
+            <div class="description">
+                <p>Asian</p>
+                <p class="smaller">korean · japanase · chinese</p>
+            </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="swiper-pagination"></div>
+  </div>
 
     <hr>
 
+
     <main>
+
         <div class="container">
+
             <div class="item" id="breakfast">
                 <img src="https://cdn.pixabay.com/photo/2016/11/06/23/16/breakfast-1804436_960_720.jpg" alt="breakfast picture">
                 <div class="description">
@@ -115,6 +213,23 @@
         <p><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-tiktok"></i></i><i class="fa-brands fa-instagram"></i></p>
         <p class="copyright">© 2023 Food Blog</p>
     </footer>
-    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          freeMode: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
+
+
 </body>
 </html>
